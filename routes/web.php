@@ -38,4 +38,4 @@ Route::get('/operation/{type}/{a}/{b}', function ($type,$a = 1, $b=1) {
             return 'popo';
             break;
     }
-});
+})->where('a'=> '[0-9]+', 'b' => '[0-9]+');
